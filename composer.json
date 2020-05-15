@@ -1,18 +1,19 @@
 {
-    "name": "laravel/installer",
-    "description": "Laravel application installer.",
-    "keywords": ["laravel"],
+    "name": "scripturadesign/quickstart",
+    "description": "Quickstart a project. Very opinionated to the way I prefer currently.",
+    "keywords": ["installer", "boilerplate", "laravel"],
     "license": "MIT",
     "authors": [
         {
-            "name": "Taylor Otwell",
-            "email": "taylor@laravel.com"
+            "name": "Martin Dilling-Hansen",
+            "email": "martindilling@gmail.com",
+            "homepage": "http://martindilling.com"
         }
     ],
     "require": {
         "php": "^7.2.9",
-        "ext-zip": "*",
         "guzzlehttp/guzzle": "^6.0",
+        "league/flysystem": "^1.0",
         "symfony/console": "^4.0|^5.0",
         "symfony/filesystem": "^4.0|^5.0",
         "symfony/process": "^4.2|^5.0"
@@ -21,21 +22,21 @@
         "phpunit/phpunit": "^8.0"
     },
     "bin": [
-        "bin/laravel"
+        "bin/quickstart"
     ],
     "autoload": {
         "psr-4": {
-            "Laravel\\Installer\\Console\\": "src/"
+            "Scriptura\\QuickStart\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Laravel\\Installer\\Console\\Tests\\": "tests/"
+            "Scriptura\\QuickStart\\Tests\\": "tests/"
         }
     },
     "extra": {
         "branch-alias": {
-            "dev-master": "3.x-dev"
+            "dev-master": "1.x-dev"
         }
     },
     "config": {

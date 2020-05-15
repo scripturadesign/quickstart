@@ -1,26 +1,64 @@
-# Laravel Installer
+# QuickStart
 
-<a href="https://github.com/laravel/installer/actions"><img src="https://github.com/laravel/installer/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/installer"><img src="https://poser.pugx.org/laravel/installer/d/total.svg" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/installer"><img src="https://poser.pugx.org/laravel/installer/v/stable.svg" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/installer"><img src="https://poser.pugx.org/laravel/installer/license.svg" alt="License"></a>
+[![Latest Version on Packagist][ico-version]][link-packagist]
+[![Software License][ico-license]](LICENSE.md)
+[![Build Status][ico-travis]][link-travis]
+[![Coverage Status][ico-scrutinizer]][link-scrutinizer]
+[![Quality Score][ico-code-quality]][link-code-quality]
+[![Total Downloads][ico-downloads]][link-downloads]
 
-## Official Documentation
+## Install
 
-Documentation for installing Laravel can be found on the [Laravel website](https://laravel.com/docs#installing-laravel).
+Via Composer
+
+``` bash
+$ composer global require scripturadesign/quickstart
+```
+
+## Usage
+
+``` bash
+quickstart laravel project-name
+```
+
+## Change log
+
+Please see [CHANGELOG](CHANGELOG.md) for more information on what has changed recently.
+
+## Testing
+
+``` bash
+$ composer test
+```
 
 ## Contributing
 
-Thank you for considering contributing to the Installer! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+Please see [CONTRIBUTING](CONTRIBUTING.md) and [CODE_OF_CONDUCT](CODE_OF_CONDUCT.md) for details.
 
-## Code of Conduct
+## Security
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+If you discover any security related issues, please email martindilling@gmail.com instead of using the issue tracker.
 
-## Security Vulnerabilities
+## Credits
 
-Please review [our security policy](https://github.com/laravel/installer/security/policy) on how to report security vulnerabilities.
+- [Martin Dilling-Hansen][link-author]
+- [All Contributors][link-contributors]
 
 ## License
 
-Laravel Installer is open-sourced software licensed under the [MIT license](LICENSE.md).
+The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
+
+[ico-version]: https://img.shields.io/packagist/v/scripturadesign/quickstart.svg?style=flat-square
+[ico-license]: https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square
+[ico-travis]: https://img.shields.io/travis/scripturadesign/quickstart/master.svg?style=flat-square
+[ico-scrutinizer]: https://img.shields.io/scrutinizer/coverage/g/scripturadesign/quickstart.svg?style=flat-square
+[ico-code-quality]: https://img.shields.io/scrutinizer/g/scripturadesign/quickstart.svg?style=flat-square
+[ico-downloads]: https://img.shields.io/packagist/dt/scripturadesign/quickstart.svg?style=flat-square
+
+[link-packagist]: https://packagist.org/packages/scripturadesign/quickstart
+[link-travis]: https://travis-ci.org/scripturadesign/quickstart
+[link-scrutinizer]: https://scrutinizer-ci.com/g/scripturadesign/quickstart/code-structure
+[link-code-quality]: https://scrutinizer-ci.com/g/scripturadesign/quickstart
+[link-downloads]: https://packagist.org/packages/scripturadesign/quickstart
+[link-author]: https://github.com/martindilling
+[link-contributors]: ../../contributors
