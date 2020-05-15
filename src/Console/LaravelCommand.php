@@ -30,7 +30,7 @@ class LaravelCommand extends Command
         $this
             ->setName('laravel')
             ->setDescription('Quickstart a new Laravel application')
-            ->addArgument('name', InputArgument::OPTIONAL)
+            ->addArgument('name', InputArgument::REQUIRED)
             ->addOption('force', 'f', InputOption::VALUE_NONE, 'Forces install even if the directory already exists');
     }
 
@@ -43,7 +43,6 @@ class LaravelCommand extends Command
      */
     protected function execute(InputInterface $input, OutputInterface $output)
     {
-
         $name = $input->getArgument('name');
 
         $directory = getcwd();
