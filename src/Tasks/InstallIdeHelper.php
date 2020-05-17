@@ -1,4 +1,5 @@
 <?php
+
 declare(strict_types=1);
 
 namespace Scriptura\QuickStart\Tasks;
@@ -87,7 +88,7 @@ STRING;
      *
      * @return string
      */
-    protected function findComposer() : string
+    protected function findComposer(): string
     {
         $composerPath = getcwd() . '/composer.phar';
 

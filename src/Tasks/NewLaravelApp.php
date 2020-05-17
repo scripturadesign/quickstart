@@ -1,4 +1,5 @@
 <?php
+
 declare(strict_types=1);
 
 namespace Scriptura\QuickStart\Tasks;
@@ -87,5 +88,4 @@ class NewLaravelApp
             $output->writeln('<comment>Default Laravel install done.</comment>');
         }
     }
-
 }

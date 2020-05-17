@@ -1,4 +1,5 @@
 <?php
+
 declare(strict_types=1);
 
 namespace Scriptura\QuickStart\Tasks;
@@ -156,5 +157,4 @@ STRING;
 
         $output->writeln('<comment>Code cleanup done.</comment>');
     }
-
 }
