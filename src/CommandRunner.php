@@ -1,4 +1,5 @@
 <?php
+
 declare(strict_types=1);
 
 namespace Scriptura\QuickStart;
@@ -25,7 +26,7 @@ class CommandRunner
         $this->directory = $directory;
     }
 
-    public function run(array $commands) : bool
+    public function run(array $commands): bool
     {
         $process = Process::fromShellCommandline(implode(' && ', $commands), $this->directory, null, null, null);
 
