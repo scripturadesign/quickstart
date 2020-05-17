@@ -25,8 +25,6 @@ class GitCommit
 
         $directory = getcwd() . '/' . $name;
 
-        $composer = $this->findComposer();
-
         $commands = [
             'git add .',
             'git commit -m "' . $this->commitMessage . '"',
@@ -38,21 +36,5 @@ class GitCommit
         if ($isSuccessful) {
             $output->writeln('<comment>Successully committed.</comment>');
         }
-    }
-
-    /**
-     * Get the composer command for the environment.
-     *
-     * @return string
-     */
-    protected function findComposer() : string
-    {
-        $composerPath = getcwd() . '/composer.phar';
-
-        if (file_exists($composerPath)) {
-            return '"' . PHP_BINARY . '" ' . $composerPath;
-        }
-
-        return 'composer';
     }
 }

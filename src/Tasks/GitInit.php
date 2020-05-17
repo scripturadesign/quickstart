@@ -19,8 +19,6 @@ class GitInit
 
         $directory = getcwd() . '/' . $name;
 
-        $composer = $this->findComposer();
-
         $commands = [
             'git init',
         ];
@@ -31,21 +29,5 @@ class GitInit
         if ($isSuccessful) {
             $output->writeln('<comment>Git repository initialized.</comment>');
         }
-    }
-
-    /**
-     * Get the composer command for the environment.
-     *
-     * @return string
-     */
-    protected function findComposer() : string
-    {
-        $composerPath = getcwd() . '/composer.phar';
-
-        if (file_exists($composerPath)) {
-            return '"' . PHP_BINARY . '" ' . $composerPath;
-        }
-
-        return 'composer';
     }
 }

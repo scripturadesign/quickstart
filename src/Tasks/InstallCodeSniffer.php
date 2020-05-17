@@ -27,7 +27,7 @@ class InstallCodeSniffer
         ];
 
         $runner = new CommandRunner($output, $directory);
-        $isSuccessful = $runner->run($commands);
+        $runner->run($commands);
 
         $filesystem = new ProjectFilesystem(getcwd() . '/' . $name);
 

@@ -7,6 +7,11 @@
 [![Quality Score][ico-code-quality]][link-code-quality]
 [![Total Downloads][ico-downloads]][link-downloads]
 
+I'm starting a lot of projects just to test out interesting ideas. But I 
+have found I have gotten more and more steps I go through every single time. 
+This is an attempt to quickly set up a project in a way I like it, in a 
+state where it's more or less ready to get coding.
+
 ## Install
 
 Via Composer
